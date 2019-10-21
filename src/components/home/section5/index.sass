@@ -1,0 +1,62 @@
+.home-section5
+    padding-bottom: 20px
+    .alibu-description
+        margin: 0 auto
+        text-align: center
+        max-width: 730px
+    .section5-image
+        position: relative
+        margin-top: 20px
+        .image
+            overflow: hidden
+            img 
+                transition: transform 1s ease
+            &:hover
+                img 
+                    transform: scale(1.5)
+                    transition: 1s
+        &:first-child
+            padding-right: 10px
+        &:nth-child(2)
+            padding-left: 10px
+        &:nth-child(3)
+            padding-right: 10px
+        &:nth-child(4)
+            padding-left: 10px
+            padding-right: 10px
+        &:last-child
+            padding-left: 10px
+        h4 
+            position: absolute
+            bottom: 30px
+            left: 40px
+            color: #ffffff
+            text-transform: uppercase
+            font-size: 30px
+            font-weight: 700
+    @media screen and ( max-width: 1025px)
+        .section5-image
+            .image
+                img 
+                    width: 100%
+            h4
+                font-size: 20px
+    @media screen and ( max-width: 576px)
+        .section5-image
+            &:first-child
+                padding-right: 15px
+            &:nth-child(2)
+                padding-right: 10px
+                padding-left: 15px
+            &:nth-child(3)
+                padding-right: 15px
+                padding-left: 10px
+            &:nth-child(4)
+                padding-left: 15px
+                padding-right: 10px
+            &:last-child
+                padding-left: 10px
+            h4
+                left: 20px
+                bottom: 10px
+        

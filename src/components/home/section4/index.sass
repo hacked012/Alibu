@@ -1,0 +1,57 @@
+.home-section4
+    background: url('../img/banner3.png') center center
+    background-size: cover
+    background-repeat: no-repeat
+    padding-bottom: 40px
+    .section4-wrapper
+        background: url('../img/banner4.png') center center
+        background-repeat: no-repeat
+        z-index: 5
+        position: relative
+    .section4-wrapper-top
+        display: flex
+        justify-content: space-around
+        .items
+            max-width: 300px
+            text-align: center
+            position: relative
+            padding-bottom: 15px
+            &::after
+                content: ''
+                width: 50px
+                height: 1px
+                background: #f7ce00
+                position: absolute
+                bottom: 0
+                left: 40%
+            .alibu-description
+                margin-bottom: 5px
+                margin-top: 10px
+    .section4-wrapper-bot
+        margin-top: 70px
+        position: relative
+        figure
+            &:hover
+                figcaption
+                    h4
+                        color: #f15a22
+                        transition: 1s
+            figcaption
+                background: rgba(254, 251, 236, 0.9)
+                transform: translateY(-50px)
+                h4
+                    font-size: 30px
+                    font-weight: 500
+                .btn-detail
+                    background: #f7ce00
+                    border: none
+                    .text-btn
+                        color: #ffffff
+                    &:hover
+                        background: #f15a22
+                        box-shadow: 1px 1px 5px #f15a22
+    @media screen and ( max-width: 1025px)
+        padding-bottom: 0px
+        .main-button
+            top: -30px
+        

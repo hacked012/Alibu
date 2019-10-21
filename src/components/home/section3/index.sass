@@ -1,0 +1,105 @@
+.home-section3
+    padding-bottom: 75px
+    .section3-wrapper-top
+        background: url('../img/banner-small.png')
+        background-repeat: no-repeat
+        background-size: 100%
+        display: flex
+        margin-bottom: 40px
+        .image
+            flex: 0 0 50%
+        .offer
+            padding: 45px 90px 0px 70px
+            flex: 0 0 50%
+            .alibu-description
+                font-size: 30px
+            .else
+                font-weight: 600
+                font-size: 14px
+                margin-left: 30px
+                border-bottom: 1px solid #000000
+                &:hover
+                    color: #000000
+    .section3-wrapper-bot
+        background: url('../img/banner-small2.png') 100%
+        background-size: 100%
+        background-repeat: no-repeat
+        .so-book
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            padding: 30px 0
+            .form-group
+                padding: 0px 5px
+                label
+                    font-size: 13px
+                    font-weight: 600
+                    text-transform: uppercase
+                    margin-bottom: 10px
+                input
+                    padding: 5px 5px
+                    border: 1px solid #cdcdcd
+                    width: 180px
+                    height: 40px
+                    padding: 0px 15px
+                    font-size: 14px
+                    font-style: italic
+                    color: #666666
+                select
+                    border: 1px solid #cdcdcd
+                    width: 180px
+                    height: 40px
+                    padding: 0px 15px
+                    font-size: 14px
+                    font-style: italic
+                    color: #666666
+                button
+                    padding: 9px 45px
+                    font-size: 14px
+                    background: #f7ce00
+                    border: none
+                    text-transform: uppercase
+                    font-weight: 600
+                    color: #ffffff
+    @media screen and ( max-width: 1025px)
+        .section3-wrapper-top
+            width: 100%
+            background-size: cover
+            .image
+                width: 50%
+                img 
+                    width: 100%
+            .offer
+                padding: 20px 20px 15px 20px
+                .alibu-description
+                    font-size: 25px
+                    margin-bottom: 10px
+                p 
+                    font-size: 12px
+                .btn-detail
+                    margin-top: 10px
+        .section3-wrapper-bot
+            background-size: cover
+            .so-book
+                width: 100%
+                display: block
+                padding: 20px 40px
+                .form-group
+                    display: inline-block
+    @media screen and ( max-width: 576px)
+        padding-bottom: 30px
+        .section3-wrapper-top
+            display: block
+            .image
+                width: 100%
+        .section3-wrapper-bot
+            background-size: cover
+            .so-book
+                .form-group
+                    display: block
+                    input
+                        width: 100%
+                    select
+                        width: 100%
+                    button
+                        margin-top: 10px

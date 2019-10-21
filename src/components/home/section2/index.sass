@@ -1,0 +1,38 @@
+.home-section2
+    background: url('../img/banner2.png')
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+    text-align: center
+    padding-bottom: 60px
+    h2 
+        &::after
+            content: ''
+            width: 50px
+            height: 1px
+            background: #f7ce00
+            position: absolute
+            bottom: 0
+            left: 48%
+    .section2-wrapper
+        max-width: 870px
+        margin: 0 auto
+        .image-wrapper
+            display: flex
+            justify-content: center
+            margin-bottom: 40px
+            .image
+                padding: 0 5px
+    @media screen and ( max-width: 576px)
+        padding-bottom: 30px
+        h2 
+            &::after
+                left: 43%
+        .section2-wrapper
+            .image-wrapper
+                display: block
+                margin-bottom: 20px 
+                .image
+                    padding: 5px 0
+            p
+                font-size: 14px

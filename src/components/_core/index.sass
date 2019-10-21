@@ -1,0 +1,105 @@
+.home-page
+    .container
+        @media(min-width: 1200px)
+            max-width: 1250px
+.alibu-title
+    text-align: center
+    font-size: 36px
+    font-weight: 500
+    position: relative
+    padding-top: 70px
+    padding-bottom: 15px
+    margin-bottom: 15px
+    @media screen and ( max-width: 1025px)
+        padding-top: 50px
+    @media screen and ( max-width: 576px)
+        padding-top: 30px
+        font-size: 30px
+.alibu-description
+    font-family: Cormorant Garamond
+    font-weight: 500
+    font-style: italic
+    font-size: 22px
+    margin-bottom: 20px
+    @media screen and ( max-width: 576px)
+        font-size: 18px
+.btn-detail
+    margin-top: 35px
+    text-transform: uppercase
+    display: inline-flex
+    padding: 5px 20px 5px 40px
+    border: 1px solid #f15a22
+    border-radius: 25px
+    cursor: pointer
+    transition: background 1s ease
+    &:hover
+        background: #f15a22
+        box-shadow: 1px 1px 5px #f15a22
+        .text-btn
+            color: #ffffff
+    .text-btn
+        font-size: 14px
+        color: #f15a22
+        font-weight: 600
+        &::after
+            margin-left: 30px
+            line-height: 0.8
+            content: '\002B'
+            font-weight: 100
+            font-size: 25px
+    @media screen and ( max-width: 1025px)
+        padding: 5px 20px
+        .text-btn 
+            font-size: 12px
+            &::after
+                font-size: 20px
+figure
+    .image
+        overflow: hidden
+        img 
+            transition: transform 1s ease
+    &:hover
+        img 
+            transform: scale(1.5)
+            transition: 1s
+    figcaption
+        max-width: 340px
+        padding: 15px 20px
+    @media screen and ( max-width: 576px)
+        .image
+            img 
+                width: 100%
+.main-button
+    .swiper-prev
+        position: absolute
+        left: -50px
+        top: 30%
+        em 
+            font-size: 36px
+            color: #b5b5b5
+    .swiper-next
+        position: absolute
+        right: -50px
+        top: 30%
+        em 
+            font-size: 36px
+            color: #b5b5b5
+    @media screen and ( max-width: 1025px)
+        display: flex
+        justify-content: center
+        position: relative
+        top: -10px
+        z-index: 50
+        .swiper-prev
+            position: relative
+            left: -15px
+            em 
+                font-size: 25px
+        .swiper-next
+            position: relative
+            right: -15px
+            em 
+                font-size: 25px
+    
+        
+        
